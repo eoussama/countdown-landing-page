@@ -1,5 +1,6 @@
 window.addEventListener('load', () => {
     const
+        spinner = document.querySelector('div.spinner'),
         DATE = new Date('05-29-2019 8:00'),
         days = {
             val: document.getElementById('val-day'),
@@ -22,6 +23,13 @@ window.addEventListener('load', () => {
         timer = null;
 
     timer = setInterval(() => {
+        if(spinner.style.display !== 'none') {
+            spinner.style.opacity = '0';
+            setTimeout(() => {
+                spinner.style.display = 'none';
+            }, 1000);
+        }
+
         let _date = new Date(DATE - new Date());
 
         if (_date <= 0) {
@@ -39,5 +47,5 @@ window.addEventListener('load', () => {
             minutes.val.textContent = Math.floor(((_date % (24 * 60 * 60 * 1000)) % (60 * 60 * 1000)) / (60 * 1000));
             seconds.val.textContent = Math.floor((((_date % (24 * 60 * 60 * 1000)) % (60 * 60 * 1000)) % (60 * 1000)) / 1000);
         }
-    }, 1000);    
+    }, 1000);
 });
