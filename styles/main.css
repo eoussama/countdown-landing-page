@@ -77,6 +77,9 @@ div.timer > h2 {
     margin-top: 150px;
 
     color: var(--secondary-color);
+
+    transition-property: font-size;
+    transition-duration: 0.5s;
 }
 
 div.timer > div.unites {
@@ -86,6 +89,9 @@ div.timer > div.unites {
 
     margin-top: 35px;
     width: 500px;
+
+    transition-property: opacity;
+    transition-duration: 1s;
 }
 
 div.unites > div.unit {

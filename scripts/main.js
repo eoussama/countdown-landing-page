@@ -28,8 +28,10 @@ window.addEventListener('load', () => {
             let _time = document.getElementById('time');
 
             clearInterval(timer);
+            document.querySelector('div.unites').style.opacity = '0';
             _time.textContent = "Time's up!";
             _time.style.color = 'var(--primary-color)';
+            _time.style.fontSize = '2em';
         }
         else {
             days.val.textContent = Math.floor(_date / (24 * 60 * 60 * 1000));
