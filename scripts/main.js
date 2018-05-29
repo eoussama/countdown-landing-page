@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     const
-        DATE = new Date('05-29-2018 8:00'),
+        DATE = new Date('05-29-2019 8:00'),
         days = {
             val: document.getElementById('val-day'),
             unt: document.getElementById('unt-day')
