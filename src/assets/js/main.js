@@ -1,3 +1,17 @@
+/**
+*
+* @name:       Countdown landing page
+* @version:    0.1.0
+* @author:     EOussama
+* @license     MIT
+* @source:     https://github.com/EOussama/countdown-landing-page
+* 
+* The main javascript file of the app.
+*
+*/
+
+"use strict";
+
 window.addEventListener('load', () => {
     const
         spinner = document.querySelector('div.spinner'),

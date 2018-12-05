@@ -1,3 +1,15 @@
+/**
+*
+* @name:       Countdown landing page
+* @version:    0.1.0
+* @author:     EOussama
+* @license     MIT
+* @source:     https://github.com/EOussama/countdown-landing-page
+* 
+* The main stylesheet of the app.
+*
+*/
+
 :root {
     --unit-size: 100px;
 
