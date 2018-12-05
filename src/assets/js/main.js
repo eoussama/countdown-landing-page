@@ -32,12 +32,12 @@ window.addEventListener('load', () => {
             val: document.getElementById('val-second'),
             unt: document.getElementById('unt-second')
         };
-    
+
     var
         timer = null;
 
     timer = setInterval(() => {
-        if(spinner.style.display !== 'none') {
+        if (spinner.style.display !== 'none') {
             spinner.style.opacity = '0';
             setTimeout(() => {
                 spinner.style.display = 'none';
